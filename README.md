@@ -26,6 +26,7 @@ Document QA is a modern web application built with Next.js and React. It provide
 2. Install dependencies:
    ```sh
    npm install
+   npm install --save-dev @testing-library/jest-dom jest-environment-jsdom
    ```
 3. Start the development server:
    ```sh
@@ -50,3 +51,9 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 This project is licensed under the MIT License. 
+
+## Build
+To build the project, run:
+```sh
+npm run build
+``` 

@@ -1,5 +1,3 @@
-"use client"
-
 import { render, screen, fireEvent } from "@testing-library/react"
 import { LoginForm } from "@/components/auth/login-form"
 import { SignupForm } from "@/components/auth/signup-form"
@@ -104,13 +102,4 @@ describe("SignupForm", () => {
     fireEvent.change(confirmPasswordInput, { target: { value: "password" } })
     expect(signUpButton).not.toBeDisabled()
   })
-})
-
-export default function TestPage() {
-  return (
-    <div className="p-8">
-      <h1 className="text-2xl font-bold mb-4">Test Page</h1>
-      <p>This page contains test examples for the application.</p>
-    </div>
-  )
-}
+}) 
